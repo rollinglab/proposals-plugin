@@ -70,6 +70,9 @@ if ( $paged >= 2 || $page >= 2 )
           </div><!--#primary-->
           
           <div id="secondary" class="four columns">
+               <nav>
+               
+               </nav>
           </div><!--#secondary-->        
      </div><!--#page-->
 </body>

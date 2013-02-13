@@ -5877,22 +5877,17 @@ table.hide-for-medium {
     width: 100%;
   }
 }
-/* line 50, ../scss/app.scss */
-body {
-  font: 16px 'Open Sans', sans-serif;
-}
-
-/* line 53, ../scss/app.scss */
+/* line 52, ../scss/app.scss */
 h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
   font-family: 'PT Sans', serif;
 }
 
-/* line 56, ../scss/app.scss */
+/* line 55, ../scss/app.scss */
 li {
   list-style: none;
 }
 
-/* line 59, ../scss/app.scss */
+/* line 58, ../scss/app.scss */
 li span {
   display: inline-block;
   margin-right: 16px;
@@ -5900,18 +5895,35 @@ li span {
   width: 20%;
 }
 
-/* line 65, ../scss/app.scss */
+/* line 64, ../scss/app.scss */
 #secondary {
-  position: relative;
   padding-top: 76px;
 }
-
-/* line 69, ../scss/app.scss */
-#secondary ul {
+/* line 66, ../scss/app.scss */
+#secondary nav {
+  width: 334px;
+  position: fixed;
+  top: 76px;
   opacity: .6;
+  -webkit-transition: 0.2s opacity ease;
+  -moz-transition: 0.2s opacity ease;
+  -o-transition: 0.2s opacity ease;
+  transition: 0.2s opacity ease;
 }
-
-/* line 72, ../scss/app.scss */
-#secondary:hover ul {
+/* line 73, ../scss/app.scss */
+#secondary nav li {
+  margin-bottom: 2px;
+}
+/* line 76, ../scss/app.scss */
+#secondary nav a {
+  color: #828282;
+  font-size: 12px;
+}
+/* line 79, ../scss/app.scss */
+#secondary nav a span {
+  font-weight: bold;
+}
+/* line 84, ../scss/app.scss */
+#secondary:hover nav {
   opacity: 1;
 }

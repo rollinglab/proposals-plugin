@@ -46,9 +46,8 @@
 // @import "foundation/components/modules/reveal";
 // @import "foundation/components/modules/offcanvas";
 
-
 body {
-     font: 16px 'Open Sans', sans-serif;
+
 }
 h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
      font-family: 'PT Sans', serif;
@@ -63,12 +62,26 @@ li span {
      width: 20%;
 }
 #secondary {
-     position: relative;
      padding-top: 76px;
-}
-#secondary ul {
-     opacity: .6;
-}
-#secondary:hover ul {
-     opacity: 1;
+     nav {
+          width: 334px;
+          position: fixed;
+          top: 76px;
+          opacity: .6;
+     
+          @include transition(.2s opacity ease);
+          li {
+               margin-bottom: 2px;
+          }
+          a {
+               color: #828282;
+               font-size: 12px;
+               span {
+                    font-weight: bold;
+               }
+          }
+     }
+     &:hover nav {
+          opacity: 1;
+     }
 }
