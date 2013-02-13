@@ -38,9 +38,10 @@ if ( $paged >= 2 || $page >= 2 )
  *
  */
 ?>
-<link rel="stylesheet" href="<?php echo plugins_url( '/css/foundation-min.css', __FILE__ ); ?>" type="text/css" media="all">
-<link rel="stylesheet" href="<?php echo plugins_url( '/css/website.css', __FILE__ ); ?>" type="text/css" media="all">
-<script src="<?php echo plugins_url( '/js/libs/jquery-1.8.3.min.js', __FILE__ ); ?>"></script>
+<?php wp_head(); ?>
+
+<link rel="stylesheet" href="<?php echo plugins_url( '/css/app.css', __FILE__ ); ?>" type="text/css" media="all">
+<?php wp_enqueue_script( 'jquery' ); ?>
 <script src="<?php echo plugins_url( '/js/app.js', __FILE__ ); ?>"></script>
 
 </head>
