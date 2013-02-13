@@ -3,11 +3,13 @@
 Plugin Name: Proposals
 Plugin URI: 
 Description: A brief description of the Plugin.
-Version: 1.0
+Version: 0.1
 Author: Rolling Lab
 Author URI: http://rollinglab.com
 License: A "Slug" license name e.g. GPL2
 */
+
+
 
 /**
  * Sets up proposal custom post type
@@ -44,7 +46,7 @@ function lab_create_post_type() {
     'has_archive' => false, 
     'hierarchical' => false,
     'menu_position' => null,
-    'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'custom-fields' )
+    'supports' => array( 'title', 'editor', 'author', 'comments', 'thumbnail', 'custom-fields' )
   ); 
 
   register_post_type( 'proposal', $args );
