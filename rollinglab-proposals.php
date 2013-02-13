@@ -73,8 +73,10 @@ function lab_get_custom_post_type_template( $single_template ) {
 
 add_filter( "single_template", "lab_get_custom_post_type_template" ) ;
 
+// TO DO: Send email upon publish
+// Send template, link to proposal
 function lab_email_link() {
-     print_r('test');
+     
 }
 add_action( 'publish_post', 'lab_email_link' );
 
