@@ -4,3 +4,21 @@ body {
 h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
      font-family: 'PT Sans', serif;
 }
+li {
+     list-style: none;
+}
+li span {
+     display: inline-block;
+     margin-right: 16px;
+     text-align: right;
+     width: 20%;
+}
+#secondary {
+     position: relative;
+}
+#secondary ul {
+     width: 100%;
+
+     position: absolute;
+     top: 0;
+}
